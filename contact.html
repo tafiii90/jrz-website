@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070707">
+<title>JRZ — Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+ <div class="container nav">
+  <a class="logo-link" href="index.html" aria-label="Go to homepage">
+    <img src="assets/logo.png" alt="JRZ logo"><span class="brand">JRZ</span>
+  </a>
+  <button class="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav class="nav-links" aria-label="Main navigation">
+   <a class="" href="index.html">Home</a>
+   <a class="" href="about.html">About</a>
+   <a class="" href="services.html">Services</a>
+   <a class="active" href="contact.html">Contact</a>
+  </nav>
+ </div>
+</header>
+
+<main>
+<section class="page-hero"><div class="container">
+ <div class="eyebrow">Contact</div><h1>Let's <span class="gradient">connect.</span></h1>
+ <p class="prose">Replace the details below with your real contact information. The form is front-end only until you connect it to a service or backend.</p>
+</div></section>
+<section class="section"><div class="container contact">
+ <div class="card"><h3>Get in touch</h3><p>hello@example.com</p><p>Instagram · Discord · WhatsApp</p></div>
+ <form class="card form" onsubmit="event.preventDefault(); alert('Thanks! Connect this form to your preferred form service before publishing.');">
+   <div><label>Name</label><input required placeholder="Your name"></div>
+   <div><label>Email</label><input required type="email" placeholder="you@example.com"></div>
+   <div><label>Message</label><textarea required placeholder="Your message"></textarea></div>
+   <button class="btn btn-primary" type="submit">Send message</button>
+ </form>
+</div></section>
+</main>
+<footer><div class="container footer-inner">
+  <a class="footer-logo" href="index.html"><img src="assets/logo.png" alt=""> <span>JRZ</span></a>
+  <span>© <span id="year"></span> JRZ. All rights reserved.</span>
+</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
